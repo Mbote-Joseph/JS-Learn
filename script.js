@@ -5,15 +5,16 @@ console.log(`Hello ${fullName}!`);
 var isLoggedIn = true;
 var loggedCount = 34;
 
-var title = document.querySelector("h1");
-title.innerHTML = course;
+// var title = document.querySelector("h1");
+// title.innerHTML = course;
 
-var subscribe = document.querySelector("button");
-if (isLoggedIn) {
-  subscribe.textContent = "Unsubscribe";
-} else {
-  subscribe.textContent = "Subscribe";
-}
+// var subscribe = document.querySelector("button");
+
+// if (isLoggedIn) {
+//   subscribe.textContent = "Unsubscribe";
+// } else {
+//   subscribe.textContent = "Subscribe";
+// }
 
 function showValue() {
   isLoggedIn = !isLoggedIn;
@@ -39,4 +40,10 @@ console.log(`
     User is subscribed to ${courseCount} courses
 `);
 
-console.log(document.body);
+// console.log(document.body);
+
+// var element = document.createElement("p");
+// element.textContent = "This is a new element from JavaScript";
+// document.body.appendChild(element);
+
+// window.alert("Hello JavaScript!");
