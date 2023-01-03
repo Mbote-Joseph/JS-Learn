@@ -1,4 +1,4 @@
-var getUserRole = function (name, role) {
+let getUserRole = function (name, role) {
   switch (role) {
     case "admin":
       return `${name} is admin with all access`;

@@ -1,4 +1,4 @@
-var users = {
+const users = {
   firstName: "Joseph",
   lastName: "Mbote",
   role: "admin",
