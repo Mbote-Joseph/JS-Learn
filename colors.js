@@ -1,18 +1,17 @@
-var red = document.getElementsByClassName("red");
-var green = document.getElementsByClassName("green");
-var yellow = document.getElementsByClassName("yellow");
-var orange = document.getElementsByClassName("orange");
-var cyan = document.getElementsByClassName("cyan");
-var violet = document.getElementsByClassName("violet");
-var pink = document.getElementsByClassName("pink");
+let red = document.getElementsByClassName("red");
+let green = document.getElementsByClassName("green");
+let yellow = document.getElementsByClassName("yellow");
+let orange = document.getElementsByClassName("orange");
+let cyan = document.getElementsByClassName("cyan");
+let violet = document.getElementsByClassName("violet");
+let pink = document.getElementsByClassName("pink");
+let center = document.getElementsByClassName("center");
 
-var center = document.getElementsByClassName("center");
-
-var getBG = (selectedColor) => {
+let getBG = (selectedColor) => {
   return window.getComputedStyle(selectedColor).backgroundColor;
 };
 
-var magicColorChanger = (element, color) => {
+let magicColorChanger = (element, color) => {
   return element.addEventListener("mouseenter", () => {
     center[0].style.backgroundColor = color;
   });
