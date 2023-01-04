@@ -40,3 +40,22 @@ function sortCoursesDesc() {
   Courses.sort((a, b) => b.price - a.price);
   generateList();
 }
+
+(function () {
+  fetch("https://api.chucknorris.io/jokes/random")
+    .then((response) => response.json())
+    .then((data) => {
+      let joke = data.value;
+      console.log(joke);
+      document.getElementById("joke").innerHTML = joke;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+})();
+
+(function () {
+  setTimeout(function () {
+    window.location.reload();
+  }, 20000);
+})();
