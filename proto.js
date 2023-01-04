@@ -33,6 +33,7 @@ User.prototype.getAge = function () {
   return `Your age is ${this.age}`;
 };
 
+// Creating the User object instance
 let Joseph = new User("Joseph Mbote", 23, "mbotejoseph001gmail.com", 4);
 console.log(Joseph);
 console.log(Joseph.courseListCount());
