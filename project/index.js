@@ -22,7 +22,7 @@ function generateList() {
 
     const span = document.createElement("span");
     span.classList.add("float-right");
-    const price = document.createTextNode("$" + course.price);
+    const price = document.createTextNode("$ " + course.price);
     span.appendChild(price);
     li.appendChild(span);
   });
